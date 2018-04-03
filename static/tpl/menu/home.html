@@ -1,0 +1,16 @@
+<navigatordir></navigatordir>
+<div ng-controller='homeCtrl' ng-init="show=true" class="home-init">
+	<!-- 引入模板 不建议-->
+	<div class="left-side" id="left-side" ng-include="'tpl/menu/leftside.html'"></div>
+	<div class="taskInfos">
+		<div class="task-panel">
+			编号：<input type="text" name="caseid" ng-model="caseid"/>
+			key:<input type="text" name="casekey" ng-model="casekey"/>
+			姓名：<input type="text" name="casename" ng-model="casename"/>
+			<button ng-click="completeTasks(caseid)">完成</button>
+			<button ng-click="createTask()">创建</button>
+		</div>
+	</div>
+
+	<a class='btn btn-primary tooltips' ui-sref="deviceManage">另一个页面</a>
+</div>

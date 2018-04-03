@@ -1,0 +1,28 @@
+#left-side{
+	float: left;
+    display: block;
+    width: 30%;
+    height: 100%;
+  
+}
+li.li-tasklist-Title,li.li-tasklist-Body,.div-tasklist-Body{
+	clear: left;
+	display: block;
+}
+
+.li-tasklist-Title div,.div-tasklist-Body .li-tasklist-Body div{
+	display: block;
+	float: left;
+	width: 30%;
+	min-width: 80px;
+	height: 28px;
+	overflow: hidden;
+}
+.tasknameStyle{
+	width: 30% !important;
+}
+.tasktimeStyle{
+	font-size: 11pt;
+	width: 40% !important;
+}
+

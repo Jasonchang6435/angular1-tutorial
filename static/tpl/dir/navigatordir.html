@@ -1,0 +1,28 @@
+<nav class='navbar lightblue cutmargin'>
+	<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a contenteditable="false">你好！{{ globalUserInfo.name }}</a></li>
+			<li><a contenteditable="false">用户名： {{ globalUserInfo.userName }}</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    角色:
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li ng-repeat='role in loginUserGroups track by $index'><a contenteditable="false">{{ role }}</a></li>
+                </ul>
+            </li>
+			<li><a contenteditable="false">组: {{ loginUserRoles }}</a></li>
+			<li><a class='a-warnHover'>登出</a></li>
+            <li><a class='a-succHover' ui-sref="homepage">主页</a></li>
+            <li><a class='a-succHover' ui-sref="modelProcessTodoList"
+                ng-show='globalUserInfo.roles.includes("模型处理主管")'>待办任务</a></li>
+            <li><a class='a-succHover' ui-sref="modelProcessAllList"
+                ng-show='globalUserInfo.roles.includes("模型处理主管")'>全部现有任务</a></li>
+            <li ng-show='showBothRolls'><a class='a-succHover' ui-sref="modelProcessAssignedList">我的任务</a></li>
+            <li ng-show='showBothRolls'><a class='a-succHover' ui-sref="modelProcessAutoDoneList">历史任务</a></li>
+            <li ng-show='showBothRolls'><a class='a-succHover' ui-sref="teethModel">线下处理牙模</a></li>
+		</ul>
+
+	</div>
+</nav>

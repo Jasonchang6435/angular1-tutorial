@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>MES</title>
+		<meta name="format-detection" content="telephone=no,email=no,address=no" />
+		<meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+		<!-- Bootstrap 3.3.7 -->
+		<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="plugin/layui/css/layui.css" media="all">
+		<!-- AdminLTE -->
+		<link rel="stylesheet" href="css/AdminLTE.css" />
+		<link rel="stylesheet" href="css/_all-skins.min.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class='overflow' ng-app="app">
+		<div ui-view>
+
+		</div>
+		<!-- 可以引入js 作为全局变量 angular 内也可以引用 -->
+		<script type="text/javascript" src="plugin/jquery.min.js"></script>
+		<!-- angular 1.3.2  项目的具体语法和插件的使用还是可以百度到的 -->
+		<script type="text/javascript" src="plugin/angular/angular.js"></script>
+		<!-- angular coocies plugin 项目未使用-->
+		<script type="text/javascript" src="plugin/angular/angular-cookies/angular-cookies.js"></script>
+		<!-- angular ajax plugin -->
+		<script type="text/javascript" src="plugin/angular/angular-resource/angular-resource.js"></script>
+		<!-- angular 路由 plugin-->
+		<script type="text/javascript" src="plugin/angular/angular-ui-router/angular-ui-router.js"></script>
+		<!-- angular 本地存储 plugin-->
+		<script type="text/javascript" src="plugin/angular/ngstorage/ngStorage.js"></script>
+		<!-- angular 懒加载 plugin 项目未使用-->
+		<script type="text/javascript" src="plugin/angular/oclazyload/ocLazyLoad.js"></script>
+		<!-- angular 上传文件 plugin 项目未使用-->
+		<script type="text/javascript" src="plugin/angular/upload/angular-file-upload.js"></script>
+		<!-- angular 项目应该只有一个 app 注入插件模块名 -->
+		<script type="text/javascript" src="js/app.js" ></script>
+		<!-- angular 的 config 配置一次 几乎不用改动 这里可以直接用 -->
+		<script type="text/javascript" src="js/config.js" ></script>
+		<!-- angular 每新建一个路由都需要在index引入js 然后修改文件 注册路由  -->
+		<script type="text/javascript" src="js/config.router.js" ></script>
+		<!-- angular 可以共用的函数都是写成 service 注入到 controller home.js 是用angular-resource插件的ajax service -->
+		<script type="text/javascript" src="js/service/home.js" ></script>
+		<!-- angular filter 用来过滤数据形式 方便在页面上用一条指令就可以显示出来 这里只有写法 没有使用 自带的如 date日期过滤器可百度   -->
+		<script type="text/javascript" src="js/filter/timeformat.js" ></script>
+		<!-- directive 有的页面既有自己独立的页面 又有自己独立的函数可以复用 就使用directive 这里是导航栏 调用用户信息接口显示 无独立作用域的简单使用 -->
+		<script type="text/javascript" src="js/directive/navigatordir.js?version=03291342"></script>
+		<!-- 一个页面一个controller js index 只引入 router 的 js文件 语法demo 在此文件-->
+        <script type="text/javascript" src="js/controller/deviceManageCtrl.js?version=03291342"></script>
+        <script type="text/javascript" src="js/controller/home.js?version=03291342"></script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<navigatordir></navigatordir>
+<div class="container div-contmargintop div-fullpage">
+    <legend>设备管理</legend>
+    <!--  -->
+    <div class="box box-solid box-primary">
+        <div class="box-header"  ng-click='toggleSearchTab()'>
+            <h3 class="box-title">查询</h3>
+        </div>
+        <div class="box-body" ng-show='searchTabShow'>
+            <div class="form-group">
+                <div class="input-group col-md-4 col-md-offset-4">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-flat">设备类型</button>
+                    </div>
+                    <!-- ng-model 页面的操作和js的数据和双向绑定 -->
+                    <!-- ng-options options的渲染 注意select有页面空白的bug 见ctrl-->
+                    <select ng-change='requiredParam()'
+                            class="form-control select2 select2-hidden-accessible"
+                            ng-model='addDeviceType'
+                            ng-options="item.val as item.name for item in workTypes">
+                    </select>
+                </div>
+            </div>
+            <!--  -->
+            <div class="form-group" >
+                <div class="col-md-2 col-md-offset-5">
+                    <button class="btn btn-block btn-primary btn-flat" ng-click='searchDeviceList()'>查询</button>
+                </div>
+            </div>
+            <!-- ng-repeat 用法 -->
+            <!-- ng-show ng-hide的 用法和ng-if的区别 -->
+            <div class="col-md-10 col-md-offset-1" ng-show='deviceList.length > 0'>
+                <table class="layui-table">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>设备编号</th>
+                            <th>设备名称</th>
+                            <th>设备类型</th>
+                            <th>时间</th>
+                            <th>修改</th>
+                            <th>删除</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in deviceList track by $index">
+                            <td>{{ $index + 1 }}</td>
+                            <td>{{ item.deviceCode }}</td>
+                            <td>{{ item.deviceName }}</td>
+                            <td>{{ typeToList[item.deviceType] }}</td>
+                            <!-- 时间过滤器 -->
+                            <td>{{ item.time | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+                            <td>
+                                <button class="btn btn-primary btn-xs">确定</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-xs">确定</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          <!--  -->
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,513 @@
+/*@media print{
+　mainsection .noprint{
+   　　display:none
+　　}
+}*/
+.row-top {
+	margin-top: 22px;
+}
+.row-bottom {
+	margin-bottom: 75px;
+}
+.top {
+	margin-bottom: 10px;
+}
+#taskModal .modal-dialog,#qualifyModal .modal-dialog {
+    display: block;
+    position: relative;
+    top: 38px;
+    width: 1024px;
+    height: 820px;
+}
+
+.cover {
+	z-index:5;
+}
+
+.autoshow {
+	opacity: 1;
+    position: absolute;
+    top: 95px;
+    left: 576px;
+    background-color: white;
+    width: 175px;
+    height: 20px;
+    padding-bottom: 10px;
+}
+.cutmargin {
+	margin-bottom: 5px;
+}
+.overflow {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+nav ul a {
+	color: #000000;
+}
+.lightblue{
+	background-color: rgba(217,237,247,0.21);
+}
+
+mainsection {
+	position: relative;
+	height:80px;
+	margin-top: 50px;
+    display: block;
+
+}
+footer{
+	position: relative;
+	margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+.tooltips {
+    margin-bottom: 10px;
+    width:160px;
+}
+.button-mid {
+	position: relative;
+	left:42%;
+}
+.dateerr {
+	position: relative;
+    left: 5%;
+    color: red;
+}
+.title-color{
+	color:#286090;
+	font-size: 16px;
+}
+
+.label-suc{
+		color: green;
+    	font-size: 1.5em;
+    }
+
+.time-picker {
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.title-color span {
+	margin-right: 25px;
+}
+
+.label-cutmargin {
+	margin-right: 5px;
+}
+
+label.control-label.label-min-width {
+    min-width: 114px;
+}
+span.span-min-width {
+    min-width: 300px;
+    display: inline-block;
+}
+form.form-inline + form.form-inline {
+	margin-top: 15px;
+}
+form .form-left-margin {
+	margin-left: 80px;
+
+}
+
+/*物料管理css*/
+/*body{
+	background: #494A5F;
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}*/
+/*a{color: #2fa0ec;outline: none;text-decoration: none;}
+a:hover,a:focus{color:#74777b;text-decoration: none;}*/
+
+.tab{
+    margin-top: 30px;
+}
+.tab .nav-tabs{
+    border:none;
+    border-bottom: 1px solid #e4e4e4;
+}
+.nav-tabs li a{
+    padding: 15px 40px;
+    border:1px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 0px none;
+    background: #7ab6f4;
+    color:#fff;
+    border-radius: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    transition: all 0.3s ease-in 0s;
+}
+.nav-tabs li a:hover{
+    border-bottom-color: #ededed;
+    border-right: 0px none;
+    background: #00b0ad;
+    color: #fff;
+}
+.nav-tabs li a i{
+    display: inline-block;
+    text-align: center;
+    margin-right:10px;
+}
+.nav-tabs li:last-child{
+    border-right:1px solid #ededed;
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus,
+.nav-tabs li.active a:hover{
+    border-top: 3px solid #00b0ad;
+    border-right: 1px solid #d3d3d3;
+    margin-top: -15px;
+    color: #444;
+    padding: 22px 40px;
+}
+.tab .tab-content{
+    padding: 20px;
+    line-height: 22px;
+    box-shadow:0px 1px 0px #808080;
+}
+.tab .tab-content h3{
+    margin-top: 0;
+}
+@media only screen and (max-width: 767px){
+    .nav-tabs li{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .nav-tabs li a{
+        padding: 15px;
+    }
+    .nav-tabs li.active a,
+    .nav-tabs li.active a:focus,
+    .nav-tabs li.active a:hover{
+        padding: 15px;
+        margin-top: 0;
+    }
+}
+
+
+#taskModal .modal-width{
+    display: block;
+    position: relative;
+    top: 38px;
+    width: 980px;
+    height: 820px;
+}
+
+.form-horizontal .form-group .p-label {
+	height: 34px;
+	text-align: left;
+}
+
+.input-maxwidth {
+	max-width: 200px;
+}
+.hismodal {
+	margin-left: 145px;
+}
+
+#taskModal .modal-daxc {
+    display: block;
+    position: relative;
+    top: 38px;
+    width: 769px;
+    height: 800px;
+}
+
+#taskModal .modal-dialog,#qualifyModal .modal-dialog.fontred {
+    color: red;
+}
+
+@media only screen and (max-width: 767px){
+	#taskModal .modal-dialog,#qualifyModal .modal-dialog {
+	    display: block;
+	    position: relative;
+	    top: 38px;
+	    width: 650px;
+	    height: 820px;
+	}
+}
+
+/*#pagination,*/
+.div-pagination {
+    position: relative;
+    bottom: 5em;
+}
+
+.form-label {
+	width: 100px;
+}
+.div-page-inline {
+	display: inline-block;
+}
+
+.div-border {
+    border: 1px solid #ddd;
+}
+
+.div-incontainer {
+    display: inline-block;
+    width: 35%;
+    margin-left: 11%;
+    margin-top: 20px;
+}
+
+.form-margintop {
+    margin-top: 15px;
+}
+@media (min-width: 1200px){
+    .container {
+        padding: inherit;
+    }
+
+}
+.a-warnHover:hover {
+    color: #d9534f;
+}
+.a-succHover:hover {
+    color: #009688;
+}
+.layui-layer-dialog .layui-layer-content {
+    height: 210px!important;
+}
+.sel-inTable {
+    margin: -10px -35px -10px 0;
+    height: 30px;
+    width: 90px;
+}
+/*文件hover css*/
+.div-fileHover > .label {
+    border：1px grey solid;
+    width: 10px!important;
+    height: 20px!important;
+}
+.div-fileHover:hover > .collapse{
+    display: block;
+}
+.layui-layer-dialog .modal-layuihack {
+    height: 512px !important;
+}
+div #teethModal .modal-content {
+    width: 850px;
+    left: -20%;
+}
+.text-noresize {
+    resize: none;
+}
+.layui-form-label.label-wider {
+    width: 135px;
+}
+.layui-form-item.margin-wider {
+    margin-bottom: 40px;
+}
+.layui-form-item.margin-left {
+    margin-left: 60px;
+}
+.tag {
+    border: 1px solid #a5d24a;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    display: block;
+    float: left;
+    padding: 5px;
+    text-decoration: none;
+    background: #5bc0de;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.tag a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;
+}
+/** 生产流程监控页面样式开始 */
+.layout-header{
+    width: 100%;
+    height: 65px;
+    background-color: #F7FAF7;
+    border-bottom: 1px solid #000;
+}
+
+.layout-header form{
+    width: 550px;
+    height: 65px;
+    margin: auto;
+    line-height: 65px;
+}
+
+.layout-body{
+    position: relative;
+    height: 2285px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.layout-body-left{
+    position: absolute;
+    left: 0;
+    width: 29%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+.layout-body-right{
+    position: absolute;
+    right: 0;
+    width: 69%;
+    height: 100%;
+}
+
+.layout-body-left .mainLine{
+    position: absolute;
+    top: 85px;
+    left: -9px;
+    right: 0;
+    margin: auto;
+    width: 2px;
+    height: 93%;
+    background-color: #337AB7;
+}
+
+.layout-body-left li.ope{
+    position: relative;
+}
+
+.layout-body-left li.ope button{
+    width: 120px;
+    height: 40px;
+    background-color: lightblue;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.layout-body-left li.ope button.active{
+    background-color: #337AB7;
+}
+
+.layout-body-left li.ope-right{
+    margin-left: 182px;
+    margin-top: 50px;
+}
+
+.layout-body-left li.ope-right i{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -28px;
+    width: 20px;
+    height: 20px;
+    background-color: #337AB7;
+    border-radius: 50%;
+}
+
+.layout-body-left li.ope-right:before{
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 38px;
+    content: "";
+    width: 26px;
+    height: 2px;
+    background-color: #337AB7;
+}
+
+.layout-body-left li.ope-left{
+    position: absolute;
+    top: 590px;
+    left: 35px;
+}
+
+.layout-body-left li.ope-left:nth-of-type(2){
+    top: 920px;
+}
+
+.layout-body-left li.ope-left:nth-of-type(3){
+    top: 1250px;
+}
+
+.layout-body-left li.ope-left:nth-of-type(1):before{
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: -130px;
+    content: "";
+    width: 2px;
+    height: 132px;
+    background-color: #337AB7;
+    transform: rotate(38deg);
+    transform-origin: bottom;
+}
+
+.layout-body-left li.ope-left:nth-of-type(1):after{
+    display: block;
+    position: absolute;
+    left: 39px;
+    top: 78px;
+    content: "";
+    width: 2px;
+    height: 253px;
+    background-color: #337AB7;
+}
+
+.layout-body-left li.ope-left:nth-of-type(3):before{
+     display: block;
+     position: absolute;
+     left: 39px;
+     top: -253px;
+     content: "";
+     width: 2px;
+     height: 255px;
+     background-color: #337AB7;
+}
+
+.layout-body-left li.ope-left:nth-of-type(3):after{
+     display: block;
+     position: absolute;
+     left: 45px;
+     top: 78px;
+     content: "";
+     width: 2px;
+     height: 120px;
+     background-color: #337AB7;
+     transform: rotate(-38deg);
+     transform-origin: top;
+}
+
+.layout-body-left canvas{
+    cursor : pointer;
+}
+
+.detail-body{
+    padding: 40px;
+}
+
+.detail-body .group-name,.detail-body span{
+    font-size: 20px;
+}
+/** 生产流程监控页面样式结束 */
+
+/** 手工批量压膜 领料页面样式开始 */
+.need-fill{
+    border: 2px solid red;
+}
+/** 手工批量压膜 领料页面样式结束 */
+/*homepage*/
+.mainbodytop {
+    margin-top: 50px;
+}

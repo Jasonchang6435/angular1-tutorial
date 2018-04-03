@@ -1,0 +1,30 @@
+<div class="side-tasklist" id="side-tasklist" ng-init="getTasks()">
+	<ul class="ui-tasklist">
+		<li class="li-tasklist-Title">
+			<div class="tasknameStyle">
+				任务名称
+			</div>
+			<div>
+				任务编号
+			</div>
+			<div class="tasktimeStyle">
+				创建时间
+			</div>
+		</li>
+		<div class="div-tasklist-Body"> 
+			<li class="li-tasklist-Body" ng-repeat="list in tasklist">
+				<div ng-bind="list.name" ng-click="getlistinfo(list.id)" class="tasknameStyle">
+					
+				</div>
+				<div ng-bind="list.id" class="taskidStyle">
+					
+				</div>
+				<div ng-bind="list.createTime | timefilter" class="tasktimeStyle">
+					
+				</div>
+			</li>
+		</div>
+		
+	</ul>
+	<!--{{tasklist}}-->
+</div>
