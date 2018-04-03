@@ -6,4 +6,4 @@ angular1 简易项目教程
   node app.js
   访问localhost7000端口
  
-### 教程内容及前端项目在/static文件夹
+#### 教程内容及前端项目在/static文件夹
